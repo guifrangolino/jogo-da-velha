@@ -97,6 +97,7 @@ main {
 
 #resultado {
     font-size: 40px;
+    text-align: center;
     margin-bottom: 70px;
     font-family: 'Poppins', sans-serif;
 }
@@ -124,4 +125,40 @@ main {
 
 #reinicio:active {
     transform: scale(1);
+}
+
+@media (max-width: 550px) {
+    #turno {
+        font-size: 35px;
+    }
+
+    .quadrado {
+        width: 100px;
+        height: 100px;
+    }
+
+    .circulo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .x {
+        height: 70px;
+        width: 4px;
+        background-color: black;
+        position: relative;
+        transform: rotate(45deg);
+        /* display: none; */
+    }
+    
+    .x::after {
+        content: '';
+        position: absolute;
+        width: 70px;
+        height: 4px;
+        background-color: black;
+        top: 32px;
+        left: -32px;
+    }
+
 }
